@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="reg.css">
+    <link rel="icon" href="../images/logo.webp" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="reg.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header1">
+            <a href="../index.html"><button class="item1 but0"><img src="../images/logo.webp" style="height: 100px;"></button></a>
+            <a href="../homepage/home.html" class="item1 but1 lang" key="home">Home</a>
+            <a href="../AboutAUT/about.html" class="item1 but1 lang" key="about">About AUT</a>
+            <a href="../ContactPage/contact.html" class="item1 but3 lang" key="contact">Contact Us!</a>
+            <a href="../Abilities/ab.html" class="item1 but4 lang" key="skills">Abilities</a>
+            <a href="../Locations/loc.html" class="item1 but5 lang" key="locs">Locations</a>
+            <a href="reg.html" class="item1 but6 lang" key="sign">Sign Up</a>
+            <a href="../Account/ac.html" class="item1 but7 lang" key="acc">Account</a>
+            <div class="itemRu"><button id="ru" class="translate"><img src="../images/RUflag.png" alt="rusflag" width="40px" height="40px"></button></div>
+            <div class="itemEng"><button id="en" class="translate"><img src="../images/USAflag.webp" alt="USAflag" width="40px" height="40px"></button></div>
+            <button class="joinbut lang" key="join"><a href="https://www.roblox.com/games/5130598377/SUMMER-UPDATE-A-Universal-Time-3-5">Join Us!</a></button>
+        </header>
+        <div class="content">
+            <div class="about1">
+                <img src="../images/sp1.webp" alt="" style="width: 300px; height: 400px; border-radius: 30px; border: 5px #333 solid;">
+                <div class="form-background">
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                            <div id="passwordStrength" style="margin-top: 5px;"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password:</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="regDate">Birth Date:</label>
+                            <input type="date" id="regDate" name="regDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customerName">Username:</label>
+                            <input type="text" id="customerName" name="customerName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country:</label>
+                            <input type="text" id="country" name="country" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Mobile Number:</label>
+                            <input type="text" id="phone" name="phone" required>
+                        </div>
+                        <button type="submit" class="joinbut1 lang" key="registerButton">Register</button>
+                        <div id="errorMessage" style="color: red;"></div>
+                    </form>
+                    <div id="successMessage" style="color: green; margin-top: 20px;"></div>
+                </div>
+                <img src="../images/locke.webp" alt="" style="width: 300px; height: 400px; border-radius: 30px; border: 5px #333 solid;">
+            </div> 
+        </div>
+        <footer class="footer1">
+            <button class="item2">© 2024 AUT. All rights reserved.</button>
+        </footer>
+    </div>
+</body>
+</html>
